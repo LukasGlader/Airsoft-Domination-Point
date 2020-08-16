@@ -16,10 +16,10 @@ U8X8_SH1106_128X64_NONAME_HW_I2C u8x8(/* reset=*/ U8X8_PIN_NONE); //1.3" SH1106 
   Code for domination game mode bases.
 
   Circuit:
-  - button for blue team attached to pin BLUE from +5v
-  - button for yellow team attached to pin YELLOW from +5v
-  - button for orange team attached to pin ORANGE from +5v
-  - I2C compatible 128x64 display connected to GND, VCC (+5v), SDA, SCL
+  - button for blue team attached to pin BLUE from Vcc
+  - button for yellow team attached to pin YELLOW from Vcc
+  - button for orange team attached to pin ORANGE from Vcc
+  - I2C compatible 128x64 display connected to GND, VCC, SDA, SCL
 
 */
 
