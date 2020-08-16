@@ -20,7 +20,8 @@ The finished device will consist of an arduino connected to an i2c display and t
 
 
 #### The point can be completely "un-captured" by either disconnecting and reconnecting the power source or by pressing all three buttons simultaneously. 
-  - The device will not indicate any team as the owner, the current scores will still be displayed but none of the scores will be increasing.
+  - The device will not indicate any team as the owner
+  - The current scores will still be displayed but none of the scores will be increasing.
   - Note that the device will ignore any key presses for two seconds after this is done.
 
 #### The point can be uncaptured as well as resetting the score to 0 for all teams by holding down all three buttons simultaneously for at least 5 seconds.
