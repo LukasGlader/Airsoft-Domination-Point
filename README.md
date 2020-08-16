@@ -13,9 +13,9 @@ Usage:
   - The device will start adding time to the capturing team.
   
 3. Re-capture the point by another team
-   - The device will now indicate that the new team has captured the point.
-   - The score for the previous owning team will stop increasing
-   - The score for the new owner will start increasing.
+ - The device will now indicate that the new team has captured the point.
+ - The score for the previous owning team will stop increasing
+ - The score for the new owner will start increasing.
    
 The point can be completely "un-captured" by either disconnecting and reconnecting the power source or by pressing all three buttons simultaneously. 
   - The device will not indicate any team as the owner, the current scores will still be displayed but none of the scores will be increasing.
@@ -44,6 +44,7 @@ U8x8 library for OLED display, look up tutorial for the display you are using (i
 
 Examples of the display when device is in use:
 
+<pre>
 After first start
  _____________________________
 | Current owner:              |
@@ -93,3 +94,5 @@ After score reset by game admin
 | Yellow:                     |
 | Orange:                     |
 |_____________________________|
+
+</pre>
