@@ -1,4 +1,4 @@
-# airsoft_domination_point
+# Airsoft Domination Point
 Arduino based score tracker for airsoft domination games.
 
 The finished device will consist of an arduino connected to an i2c display and three buttons, one for each team.
@@ -36,7 +36,8 @@ The finished device will consist of an arduino connected to an i2c display and t
 
 # Required Hardware:
 
-- Arduino compatible device with EEPROM (tested on an Arduino Nano Every)
+- Arduino compatible device with EEPROM (tested on an Arduino Nano Every).
+ The EEPROM will be written to once every minute when captured, and once each time the owner changes, which means that this feature should be reliable for several months of running time.
 - 3x buttons
 - I2C 128x64 pixel display
 
