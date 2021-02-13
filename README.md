@@ -83,7 +83,7 @@ U8x8 library for OLED display, look up tutorial for the display you are using (i
 |_____________________________|
 </pre>
 
-## After power outage or "un-capturing" by game admin
+## After "un-capturing" by game admin
 <pre>
  _____________________________
 | Current owner:              |
