@@ -1,7 +1,10 @@
 # Airsoft Domination Point
 Arduino based score tracker for airsoft domination games.
 
-The finished device will consist of an arduino connected to an i2c display and three buttons, one for each team.
+# Features:
+ - Keeps track of the scores for up to three teams (named Blue, Yellow and Orange).
+ - Using a 128x64px display the maximum time that can be displayed is 99h59m59s per team.
+ - Retains the current owner team of the captured point as well as the current score (+/- 1 minute) in case the power supply is disconnected.
 
 # Usage:
  #### 1. Connect power source
@@ -27,19 +30,14 @@ The finished device will consist of an arduino connected to an i2c display and t
 #### The point can be uncaptured as well as resetting the score to 0 for all teams by holding down all three buttons simultaneously for at least 5 seconds.
   - Note that the device will ignore any key presses for two seconds after this is done.
 
-
-# Features:
- - Keeps track of the scores for up to three teams (named Blue, Yellow and Orange).
- - Using a 128x64px display the maximum time that can be displayed is 99h59m59s per team.
- - Retains the current owner team of the captured point as well as the current score (+/- 1 minute) in case the power supply is disconnected.
-
-
 # Required Hardware:
-
 - Arduino compatible device with EEPROM (tested on an Arduino Nano Every).
- The EEPROM will be written to once every minute when captured, and once each time the owner changes, which means that this feature should be reliable for several months of running time.
-- 3x buttons
+- 3x momentary switches
 - I2C 128x64 pixel display
+
+Note:
+The EEPROM will be written to once every minute when captured, as well as each time the owner changes. According to my reasearch on the wear on EEPROM when writing to it this feature should be reliable for several months of running time.
+
 
 # Required Software:
 U8x8 library for OLED display, look up tutorial for the display you are using (i.e SSD1306 based display).
